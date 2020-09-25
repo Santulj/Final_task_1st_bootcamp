@@ -1,0 +1,16 @@
+.card-group {
+    margin: 5%;
+}
+.footer {
+    margin: 0;
+    padding: 2% 30%;
+    background-color:#BDC3C7 ;
+    align-content: center;
+}
+.jumbotron {
+    padding: 2% 5%;
+    height: 250px;
+}
+.nav {
+    padding: 2% 4%;
+}

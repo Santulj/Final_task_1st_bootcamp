@@ -1,0 +1,19 @@
+.carousel {
+    width: 80%;
+    margin: 0 10%;
+    align-content: center;
+}
+.card-group {
+    margin: 2%;
+}
+.card {
+    padding: 2%;
+    margin: 2%;
+    border: 3px solid grey;
+}
+.footer {
+    margin: 0;
+    padding: 2% 30%;
+    background-color:#BDC3C7 ;
+    align-content: center;
+}
