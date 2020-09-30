@@ -1,31 +1,29 @@
-document
-    .getElementsByClassName('btn')
-    .addEventListener('click', function(event){
-        event.preventDefault ();
-        var input = document.getElementsById('username');
-        // var input1 = document.getElementById('message');
-        var elements = document.getElementsByClassName('some');
+var messages = [];
+var usernames = [];
+var now = new Date();
+ 
+  
 
-        var newElement = `<p>${input.value}</p>`
-        // var newElement1 = `<p>${input1.value}</p>`
 
-        for (var element of elements) {
-            element.innerHTML = newElement
-        
-            document
-            .getElementsByClassName('box')
-            .innerHTML += newElement
+$('#submitMessage').click(function(){
 
-        input.value = ''
-        }
+    var username = $("#username").val();
+    var message = $("#message").val();
 
-        // for (var element of elements) {
-        //     element.innerHTML = newElement1
-        
-        //     document
-        //     .getElementsByClassName('box')
-        //     .innerHTML += newElement
+    messages.push('<p>' + username + ' ' + '<span style="color:grey; font-size: 12px;">'+ now + '</span>'  + '</p>'  + '<br/>' + '<p>' + message + '</p>' + '<hr/>' );
+    for (var i = 0; i < messages.length; i++) {
 
-        // input1.value = ''
-        // }
-    })
+        $('.messageBox').html(
+            messages.join('<br/>') 
+            
+        );
+     }
+
+});
+
+
+    
+
+
+
+

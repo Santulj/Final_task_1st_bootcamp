@@ -12,9 +12,9 @@
 <body>
 <!-- Header -->
     <!-- Logo -->
-    <nav class="navbar navbar-light bg-light">
-        <img src="logo.jpg" height="40" alt="" loading="lazy">
-    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light" style="padding: 0 1%;">
+        <a class="nav-link active" href="finaltask.html"><img src="logo.jpg" height="40" loading="lazy"> </a>
+            <!-- Navigation -->
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link active" href="finaltask.html">Sākums</a>
@@ -33,7 +33,6 @@
             </li>
         </ul>
     </nav>
-
 <!-- Nav -->
 <ul class="nav" style="padding-left: 2%;">
     <li class="nav-item">
@@ -48,23 +47,27 @@
 <h4 style="padding: 1% 3% 0 6%">Sarakste</h4>
 <div class="conteiner" style="padding: 1% 7%;">
     <div class="row">
-        <div class="col-12 box" style="border: 1px solid black; height: 300px; width: 1300px;">
-            <p class="some"></p>
+        <div class="col-12 box" style="border: 1px solid black; height: 300px; width: 1300px; overflow:scroll">
+            <!-- box -->
+            <p class="messageBox"></p>
         </div>
         <div class="col-12" style="border: 1px solid black;">
             <div class="row">
                 <div class="col-12" style="padding-left: 2%;">
+            <!-- Username -->
                     <div><label for="username"><strong> Lietotājvārds:</strong></label></div>
-                   <div><input type="text" id="username" ></div>
+                   <div><input type="text" id="username"></div>
                 </div>
                 <div class="col-12">
                     <div class="row">
                         <div class="col-11" style="padding-bottom: 2%;">
+            <!-- Message -->
                             <div style="padding-left: 1%;"><label for="message"><strong>Ziņa:</strong></label></div>
                             <div style="padding-left: 1%;"><textarea name="blog" id="message" cols="163" rows="5" ></textarea></div>
                         </div>
                         <div class="col-1">
-                            <div style="padding-top: 110px;"><button type="button" class="btn btn-info" >Iesniegt</button></div>
+            <!-- Button -->
+                            <div style="padding-top: 110px;"><button id="submitMessage"  class="btn btn-info" >Iesniegt</button></div>
                         </div>
                     </div>
                 </div>
@@ -86,6 +89,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="C:\Users\burke\Desktop\Programming\Final_task\sarakste.jsk"></script>
+    <script src="sarakste.js"></script>
 </body>
 </html>
